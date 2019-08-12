@@ -1,7 +1,23 @@
-<HTML>
-<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
-<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<!DOCTYPE html>
+<HTML lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>AR Education</title>
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+  <link rel="preload" href="english-a.svg" as="image" type="image/svg+xml">
+  
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  <script src="aframe.min.js"></script>
+  <script src="aframe-extras.loaders.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
